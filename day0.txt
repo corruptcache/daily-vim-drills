@@ -1,0 +1,113 @@
+============================================================================== VIM INTERACTIVE PRACTICE LAB (20-30 MIN)
+
+INSTRUCTIONS:
+
+Open this file in Vim: vim day0.txt
+
+Follow the steps in each section.
+
+Do NOT use your arrow keys.
+
+If you get stuck in a mode, press <ESC> to return to Normal Mode.
+
+SECTION 1: THE BASICS OF MOVEMENT (5 MIN) Goal: Stop using 'h' 'j' 'k' 'l' for every character.
+
+DRILL A: Word Jumps
+Instruction: Use 'w' to jump to the start of words and 'b' to jump back.
+Target: Move from word to word until you reach the [TARGET].
+
+The quick brown fox jumps over the lazy [TARGET] dog.
+
+DRILL B: End of Word
+Instruction: Use 'e' to jump to the END of the word.
+Target: Land exactly on the '!' at the end of each word.
+
+Jump! To! Each! Exclamation! Point!
+
+DRILL C: Line Extremes
+Instruction: Press '0' (zero) to jump to the start of the line.
+Press '$' to jump to the very end of the line.
+
+[START] ----------------------------------------------------------------- [END]
+
+SECTION 2: CHARACTER SEARCH NAVIGATION (5 MIN) Goal: Use 'f' (find) and 't' (until) for rapid horizontal movement.
+
+DRILL A: Forward Find
+Instruction: Press 'f' followed by the character 'X'.
+Repeat by pressing ';' (semicolon) to find the next one.
+Target: Find every 'X' in this line.
+
+There is an X here, an X there, and an X way over here.
+
+DRILL B: Find Until
+Instruction: Press 't' followed by ')' to land just BEFORE the parenthesis.
+Target: Land on the '8' in (98).
+
+Look at this number: (98).
+
+SECTION 3: EDITING GRAMMAR (OPERATOR + MOTION) (10 MIN) Goal: Combine 'd' (delete), 'c' (change), or 'y' (yank) with motions.
+
+DRILL A: Delete Word (dw)
+Instruction: Put cursor on 'REDUNDANT'. Press 'dw'.
+Target: Clean up this sentence.
+
+This sentence has a REDUNDANT word inside of it.
+
+DRILL B: Change Inner Word (ciw)
+Instruction: Put cursor anywhere inside 'ERROR'. Press 'ciw'.
+Type 'SUCCESS' and press <ESC>.
+
+The status of the operation is: ERROR.
+
+DRILL C: Delete to End of Line (d$)
+Instruction: Move to the 'S' in 'STAY'. Press 'd$'.
+Target: Remove the extra words.
+
+This part should stay. STAY BUT DELETE EVERYTHING AFTER THIS.
+
+SECTION 4: TEXT OBJECTS (THE MAGIC OF VIM) (5 MIN) Goal: Master 'i' (inner) and 'a' (around) objects.
+
+DRILL A: Change Inner Quotes (ci")
+Instruction: Put cursor inside the quotes. Press 'ci"'.
+Type 'Hello World' and press <ESC>.
+
+The computer said: "CHANGE ME TO SOMETHING ELSE"
+
+DRILL B: Delete Inside Brackets (di[)
+Instruction: Put cursor inside the brackets. Press 'di['.
+
+List of items: [Apples, Oranges, Pears, Bananas, Grapes]
+
+SECTION 5: VISUAL BLOCK & MACROS (5 MIN) Goal: Multiline edits and automation.
+
+DRILL A: Visual Block Insert (Ctrl-v)
+Instruction: 1. Put cursor on the 'L' in 'Line 1'.
+2. Press 'Ctrl+v' (Visual Block mode).
+3. Use 'j' to select all four lines downward.
+4. Press 'Shift+i' (Capital I for insert).
+5. Type 'DONE: '
+6. Press <ESC>. Wait 1 second for the change to apply to all lines.
+
+Line 1
+Line 2
+Line 3
+Line 4
+
+DRILL B: Basic Macro (Recording)
+Instruction: 1. Put cursor on 'item1'.
+2. Press 'qa' (start recording into register 'a').
+3. Press 'I' (Shift+i), type '-', space, press <ESC>.
+4. Press 'j' (move down).
+5. Press 'q' (stop recording).
+6. Press '@a' to repeat the action on the next line.
+7. Press '3@a' to do the rest.
+
+item1
+item2
+item3
+item4
+item5
+
+============================================================================== END OF LAB
+
+Tip: Run ':q!' to exit without saving changes so you can practice again!
