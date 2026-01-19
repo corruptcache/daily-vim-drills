@@ -1,0 +1,208 @@
+==============================================================================
+
+DAY 2 VIM WORKOUT: PRECISION & OBJECTS (25 MIN)
+
+==============================================================================
+
+INSTRUCTIONS:
+
+==============================================================================
+Open this file:
+
+DAY 2 VIM WORKOUT: PRECISION & OBJECTS (25 MIN)
+
+==============================================================================
+
+INSTRUCTIONS:
+
+Open this file: vim day2.txt
+
+Follow the steps. No arrow keys!
+
+Use 'u' to undo and 'Ctrl-r' to redo.
+
+SECTION 1: SEARCH NAVIGATION (5 MIN)
+
+Goal: Use search to jump across the screen instantly.
+
+DRILL A: Word Search under Cursor ()
+Instruction: Put cursor on the word 'BANANA'. Press * to find the next one.
+Press 'n' to go to the next match, and 'N' for the previous.
+Target: Find every BANANA: BANANA, apple, orange, BANANA, grape, BANANA.
+
+DRILL B: Manual Search (/)
+Instruction: Press '/', type 'target', and press <Enter>.
+Target: This line is just filler.
+Target: You want to land on this target.
+
+SECTION 2: THE "A" VS "I" TEXT OBJECTS (5 MIN)
+
+Goal: Understand the difference between "Inner" (i) and "Around" (a).
+
+DRILL A: Delete Inner Word (diw)
+Instruction: Put cursor on 'REDUNDANT'. Press 'diw'.
+Note: This deletes the word but leaves the spaces.
+Target: This is a REDUNDANT word.
+
+DRILL B: Delete Around Word (daw)
+Instruction: Put cursor on 'EXTRA'. Press 'daw'.
+Note: This deletes the word AND the surrounding space.
+Target: Remove the EXTRA word.
+
+SECTION 3: VISUAL MODE TRICKS (5 MIN)
+
+Goal: Mastering selection and switching sides.
+
+DRILL A: Visual Selection + 'o' (Other side)
+Instruction:
+
+Put cursor on 'Start'. Press 'v'.
+
+Move to 'End' using 'w'.
+
+Press 'o'. Your cursor jumps back to 'Start' while keeping the selection!
+
+Expand the selection backwards, then press 'd' to delete.
+Target: [Start] --- some text in the middle --- [End]
+
+SECTION 4: DELETE UNTIL/FIND (5 MIN)
+
+Goal: Combine operators with search motions.
+
+DRILL A: Delete Until (dt)
+Instruction: Put cursor on the 'X'. Press 'dt' then '.'.
+Target: X Delete everything until the period. This stays.
+
+DRILL B: Change Find (cf)
+Instruction: Put cursor on 'C'. Press 'cf' then 'X'. Type 'DONE'.
+Target: Change this text X but stop after the X.
+
+SECTION 5: MACRO WITH APPENDING (5 MIN)
+
+Goal: Learning to build onto a macro.
+
+DRILL A: The Bullet List
+Instruction:
+
+Put cursor on 'Alpha'.
+
+Press 'qa' to record. Press 'I', type '- ', <ESC>, 'j', 'q'.
+
+Now, we want to add a period to the end of each.
+
+Put cursor back on 'Alpha'.
+
+Press 'qA' (Capital A appends to macro 'a').
+
+Press 'k' (up), 'A', type '.', <ESC>, 'j', 'q'.
+
+Run '3@a' on the remaining lines.
+
+Alpha
+Beta
+Gamma
+Delta
+
+==============================================================================
+
+WORKOUT COMPLETE
+
+==============================================================================
+
+Tip: Use 'zz' to center the screen on your cursor if you lose track of
+where you are. See you for Day 3!e: vim vim_drills_day2.txt
+
+Follow the steps. No arrow keys!
+
+Use 'u' to undo and 'Ctrl-r' to redo.
+
+SECTION 1: SEARCH NAVIGATION (5 MIN)
+
+Goal: Use search to jump across the screen instantly.
+
+DRILL A: Word Search under Cursor ()
+Instruction: Put cursor on the word 'BANANA'. Press '' to find the next one.
+Press 'n' to go to the next match, and 'N' for the previous.
+Target: Find every BANANA: BANANA, apple, orange, BANANA, grape, BANANA.
+
+DRILL B: Manual Search (/)
+Instruction: Press '/', type 'target', and press <Enter>.
+Target: This line is just filler.
+Target: You want to land on this target.
+
+SECTION 2: THE "A" VS "I" TEXT OBJECTS (5 MIN)
+
+Goal: Understand the difference between "Inner" (i) and "Around" (a).
+
+DRILL A: Delete Inner Word (diw)
+Instruction: Put cursor on 'REDUNDANT'. Press 'diw'.
+Note: This deletes the word but leaves the spaces.
+Target: This is a REDUNDANT word.
+
+DRILL B: Delete Around Word (daw)
+Instruction: Put cursor on 'EXTRA'. Press 'daw'.
+Note: This deletes the word AND the surrounding space.
+Target: Remove the EXTRA word.
+
+SECTION 3: VISUAL MODE TRICKS (5 MIN)
+
+Goal: Mastering selection and switching sides.
+
+DRILL A: Visual Selection + 'o' (Other side)
+Instruction:
+
+Put cursor on 'Start'. Press 'v'.
+
+Move to 'End' using 'w'.
+
+Press 'o'. Your cursor jumps back to 'Start' while keeping the selection!
+
+Expand the selection backwards, then press 'd' to delete.
+Target: [Start] --- some text in the middle --- [End]
+
+SECTION 4: DELETE UNTIL/FIND (5 MIN)
+
+Goal: Combine operators with search motions.
+
+DRILL A: Delete Until (dt)
+Instruction: Put cursor on the 'X'. Press 'dt' then '.'.
+Target: X Delete everything until the period. This stays.
+
+DRILL B: Change Find (cf)
+Instruction: Put cursor on 'C'. Press 'cf' then 'X'. Type 'DONE'.
+Target: Change this text X but stop after the X.
+
+SECTION 5: MACRO WITH APPENDING (5 MIN)
+
+Goal: Learning to build onto a macro.
+
+DRILL A: The Bullet List
+Instruction:
+
+Put cursor on 'Alpha'.
+
+Press 'qa' to record. Press 'I', type '- ', <ESC>, 'j', 'q'.
+
+Now, we want to add a period to the end of each.
+
+Put cursor back on 'Alpha'.
+
+Press 'qA' (Capital A appends to macro 'a').
+
+Press 'k' (up), 'A', type '.', <ESC>, 'j', 'q'.
+
+Run '3@a' on the remaining lines.
+
+Alpha
+Beta
+Gamma
+Delta
+
+==============================================================================
+
+WORKOUT COMPLETE
+
+==============================================================================
+
+Tip: Use 'zz' to center the screen on your cursor if you lose track of
+where you are. See you for Day 3!
