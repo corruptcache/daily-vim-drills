@@ -1,0 +1,118 @@
+==============================================================================
+
+DAY 3 VIM WORKOUT: POWER EDITING (25 MIN)
+
+==============================================================================
+
+INSTRUCTIONS:
+
+Open this file: day3.txt
+
+Perform the tasks in order.
+
+No arrow keys. Use 'u' to undo any mistakes.
+
+SECTION 1: THE LONG JUMP (5 MIN)
+
+Goal: Rapid vertical navigation across the entire file.
+
+DRILL A: Start and End
+Instruction:
+
+Press 'gg' to jump to the very first line of the file.
+
+Press 'G' (Shift+g) to jump to the very last line of the file.
+
+Use ':25' followed by <Enter> to jump specifically to line 25.
+
+DRILL B: Screen Positioning
+Instruction:
+
+Press 'H' (High) to jump to the top of the visible screen.
+
+Press 'M' (Middle) to jump to the middle of the screen.
+
+Press 'L' (Low) to jump to the bottom of the screen.
+
+Press 'zz' to center the current line on your screen.
+
+DRILL C: Matching Pairs (%)
+Instruction: Put your cursor on the first '[' below and press '%'.
+Target: [ This is a long bracketed sentence that spans (multiple) parts. ]
+
+SECTION 2: REGISTERS & THE CLIPBOARD (5 MIN)
+
+Goal: Use specific registers so you don't lose text when deleting.
+
+DRILL A: Yanking to a Named Register
+Instruction:
+
+Put cursor on 'SECRET'.
+
+Press '"ayiw' (Double-quote, a, yank inner word). This saves 'SECRET' to register 'a'.
+
+Move to the next line. Press 'diw' to delete 'DELETE_ME'.
+
+Press '"ap' to paste 'SECRET' from register 'a'.
+Target 1: SECRET
+Target 2: DELETE_ME
+
+SECTION 3: LINE MANIPULATION (5 MIN)
+
+Goal: Cleaning up formatting with 'J' and ':sort'.
+
+DRILL A: Joining Lines (J)
+Instruction: Put cursor on 'Line 1'. Press 'J' (Shift+j) repeatedly.
+Target:
+Line 1
+Line 2
+Line 3
+Line 4
+
+DRILL B: Sorting Lines (:sort)
+Instruction:
+
+Highlight the list below using 'V' (Visual Line mode).
+
+Type ':sort' and press <Enter>.
+Target:
+Zebra
+Apple
+Monkey
+Banana
+
+SECTION 4: GLOBAL SUBSTITUTE (5 MIN)
+
+Goal: Changing text across multiple lines at once.
+
+DRILL A: Search and Replace with Confirmation
+Instruction:
+
+Type ':%s/CHERRY/BERRY/gc' and press <Enter>.
+
+Press 'y' to confirm each change.
+Target:
+I have a CHERRY.
+You have a CHERRY.
+We all have a CHERRY.
+
+SECTION 5: THE GLOBAL COMMAND (5 MIN)
+
+Goal: Perform actions on lines that match a pattern.
+
+DRILL A: Delete lines containing 'TRASH'
+Instruction: Type ':g/TRASH/d' and press <Enter>.
+Target:
+Keep this line.
+TRASH - Remove this.
+Keep this too.
+TRASH - This should go.
+
+==============================================================================
+
+WORKOUT COMPLETE
+
+==============================================================================
+
+Tip: Use ':wq' to save and quit, or ':q!' to exit without saving so you
+can repeat these drills later!
