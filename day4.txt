@@ -1,0 +1,122 @@
+==============================================================================
+
+DAY 4 VIM WORKOUT: NEOVIM & STRUCTURAL FLOW (25 MIN)
+
+==============================================================================
+
+INSTRUCTIONS:
+
+Open this file: nvim day4.txt
+
+Perform the tasks in order.
+
+No arrow keys.
+
+If a command doesn't work, check your LazyVim keybinds with :Telescope keymaps.
+
+SECTION 1: THE JUMP LIST & CHANGELIST (5 MIN)
+
+Goal: Move back and forth through your editing history.
+
+DRILL A: The Jump List
+Instruction:
+
+Press 'G' to jump to the bottom of the file.
+
+Press 'gg' to jump back to the top.
+
+Press 'Ctrl + o' (Old) to jump back to where you just were (the bottom).
+
+Press 'Ctrl + i' to jump forward again in your jump history.
+
+DRILL B: The Change List
+Instruction:
+
+Go to DRILL A above and change 'Old' to 'Previous' using 'ciw', then <ESC>.
+
+Move your cursor somewhere else entirely.
+
+Press 'g;' (Go to semicolon) to jump back to the exact spot of your last change.
+
+SECTION 2: ADVANCED VISUAL BLOCK (5 MIN)
+
+Goal: Simultaneous editing across multiple lines.
+
+DRILL A: Appending to a Block
+Instruction:
+
+Place cursor on the '1' in 'Item 1'.
+
+Press 'Ctrl + v' and move down to select all 4 lines.
+
+Press '$' to extend the selection to the end of the longest line.
+
+Press 'A' (Shift+a) to append.
+
+Type ' [PENDING]' and press <ESC>. (Wait a moment for it to sync).
+
+Item 1
+Item 2
+Item 3
+Item 4
+
+SECTION 3: LINE TRANSPOSITION & COMFORT (5 MIN)
+
+Goal: Move lines up and down (Commonly mapped in Neovim/LazyVim).
+
+DRILL A: Moving Lines
+Instruction:
+In many Neovim setups (including LazyVim), you can move lines using Alt+j and Alt+k.
+
+Put cursor on 'MOVE ME'.
+
+Try 'Alt + j' to move the line down.
+
+Try 'Alt + k' to move it up.
+
+(Place cursor here)
+MOVE ME
+(Between these lines)
+
+SECTION 4: MACRO REFINEMENT (5 MIN)
+
+Goal: Editing a macro without re-recording it.
+
+DRILL A: Pasting a Macro
+Instruction:
+
+Let's say you have a macro in register 'q'. Since you don't, record this:
+'qq', 'I', 'STUB: ', <ESC>, 'q'.
+
+Now, let's look at the macro. Go to an empty line and press '"qp'.
+
+You should see the keystrokes. Change 'STUB' to 'DONE'.
+
+Yank the new string back into the register: '0"qy$'.
+
+Now run '@q' on the target below.
+
+Target: Update this line using the edited macro.
+
+SECTION 5: NEOVIM LSP & DIAGNOSTICS (5 MIN)
+
+Goal: Navigating "Errors" (Simulated).
+
+In a real code file, LazyVim uses ]d and [d to jump between errors.
+Instruction:
+
+If you were in a Lua or Python file, you would press ]d to find the next error.
+
+Press 'K' while hovering over a word to see "Hover Documentation" (Simulated here).
+
+Target Word: Function_Name()
+(Pretend pressing 'K' here shows you the parameters of this function).
+
+==============================================================================
+
+WORKOUT COMPLETE
+
+==============================================================================
+
+Tip: In LazyVim, press '<leader>sk' to search through all available
+keymaps if you ever forget a motion!
